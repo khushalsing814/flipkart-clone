@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>bootstrap-Website</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<style>
+  #exampleModalLabel {
+    margin-left: 160px;
+    font-size: 30px;
+  }
+</style>
+
+<body>
+
+  <div class="container mt-4">
+    <div class="row">
+      <div class="col-1 offset-1" id="mm">
+        <img src="img.png" alt="" height="100vh" width="100vw">
+      </div>
+      <div class="col">
+        <ul class="col" id="menu2">
+          <li><a href="#">Events</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Best Deals</a></li>
+          <li><a href="#">Services</a></li>
+        </ul>
+      </div>
+      <div class="col">
+        <ul class="col" id="menu3">
+          <i style="font-size:16px" class="fa fa-phone"></i>
+          <li><a href="#">(+91) 7986621856</a></li>
+          <i style="font-size:16px" class="fa">&#xf0e0;</i>
+          <li><a href="#">manurajput844@gmail.com</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- cart -->
+  <div class="container mt-3">
+    <div class="row row-cols-1text-center row-cols-1">
+
+      <div class="col col-1 offset-5">
+        <i class="fa fa-bars" data-bs-toggle="collapse" data-bs-target="#menu" id="none"></i>
+        <!-- aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> -->
+      </div>
+
+      <div class="col col-1 offset-5">
+        <!-- <a href="signup.php"> -->
+        <i class="fa fa-shopping-cart" data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+        <!-- </a> -->
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header ">
+          <h5 class="modal-title" style="color:blue" ; id="exampleModalLabel">Signup</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+          <form>
+            <form Method="post" action="" enctype=multipart/form-data>
+              Username : <input type="text" name="username" required>
+              <br><br>
+              E-Mail : <input type="text" name="email" required>
+              <br><br>
+              Gender:
+              <input type="radio" name="gen" value="male"> Male
+              <input type="radio" name="gen" value="female"> Female
+              <input type="radio" name="gen" value="other"> Other
+              <br><br>
+              Language :
+              <input type="checkbox" name="lang[]" value="hindi"> Hindi
+              <input type="checkbox" name="lang[]" value="english"> English
+              <input type="checkbox" name="lang[]" value="punjabi"> Punjabi
+              <br><br>
+              Password : <input type="password" name="password" required>
+              <br><br>
+              Upload image : <input type="file" name="uploadfile" value="Uploadfile">
+              <br><br>
+              <input type="checkbox" name=""> I Agree To The Terms & Condition
+              <br><br>
+              <div class="modal-footer justify-content-center">
+                <button type="Submit" name="Submit" class="btn btn-primary">Sign Up</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </form>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Nav -->
+  <div class="container-fluid">
+    <div class="row mt-1">
+      <div class="col">
+        <ul id="menu">
+          <li><a href="#">All Categories</a></li>
+          <li><a href="#">Branded Shoes</a></li>
+          <li><a href="#">T-Shirts</a></li>
+          <li><a href="#">Jackets</a></li>
+          <li><a href="#">Apple Products</a></li>
+          <li><a href="#">Kitchen Appliances</a></li>
+          <li><a href="#">Men Gromming</a></li>
+          <li><a href="#">Perfumes</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-10">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+            <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+            <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="shopping images/discount.jpg" height="600vh" width="100%" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="shopping images/offer.jpg" height="600vh" width="100%" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="shopping images/offer.pg.jpg" height="600vh" width="100%" alt="...">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container text-center" id="fa">
+    <div class="row row-col-1">
+      <div class="col d-flex">
+        <img src="shopping images/specialoffer1.jpg" alt="">
+        <i class="fa fa-an"></i>
+      </div>
+    </div>
+  </div>
+  <div class="container ">
+    <div class="row " style="background-color: #eee;">
+      <div class="col-sm-4">
+        <div class="card">
+          <div class="card-body">
+            <!-- <h5 class="card-title">Special title treatment</h5> -->
+            <img src="shopping images/kitchenoffer.jpg" height="360vh" width="100%" alt="...">
+            <!-- <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> -->
+            <!-- <a href="#" class="btn btn-outline-primary">Go somewhere</a> -->
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="card">
+          <div class="card-body">
+            <!-- <h5 class="card-title">Special title treatment</h5> -->
+            <img src="shopping images/samsung.jpg" height="360vh" width="100%" alt="...">
+            <!-- <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> -->
+            <!-- <a href="#" class="btn btn-outline-primary">Go somewhere</a> -->
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="card">
+          <div class="card-body">
+            <!-- <h5 class="card-title">Special title treatment</h5> -->
+            <img src="shopping images/poder.jpg" height="360vh" width="100%" alt="...">
+            <!-- <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> -->
+            <!-- <a href="#" class="btn btn-outline-primary">Go somewhere</a> -->
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="card m-3">
+          <div class="card-body">
+            <!-- <h5 class="card-title">Special title treatment</h5> -->
+            <img src="shopping images/mitv.jpg" height="360vh" width="100%" alt="...">
+            <!-- <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> -->
+            <!-- <a href="#" class="btn btn-outline-primary">Go somewhere</a> -->
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="card m-3">
+          <div class="card-body">
+            <!-- <h5 class="card-title">Special title treatment</h5> -->
+            <img src="shopping images/clothe.jpg" height="360vh" width="100%" alt="...">
+            <!-- <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> -->
+            <!-- <a href="#" class="btn btn-outline-primary">Go somewhere</a> -->
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="card m-3">
+          <div class="card-body">
+            <!-- <h5 class="card-title">Special title treatment</h5> -->
+            <img src="shopping images/flez.jpg" height="360vh" width="100%" alt="...">
+            <!-- <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> -->
+            <!-- <a href="#" class="btn btn-outline-primary">Go somewhere</a> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- singel image -->
+  <div class="container-fluid mt-3">
+    <div class="row">
+      <img src="shopping images/beauty1.jpg" height="400vh" alt="" style=" width: 100%;">
+    </div>
+  </div>
+
+  <!-- Apple-->
+  <div class="container-fluid" style="background-color: #1a1a4b" id="c">
+    <div class="row row-cols-2 d-flex justify-content-between" id="m">
+      <div class="col col-2" id="apple">
+        <h1>Apple Product Offers</h1>
+        <p>Open from <time>10:00 am</time> to <time>9:00 pm</time> every weekday.</p>
+      </div>
+      <div class="col-8">
+        <div class="row" id="m">
+          <div class="col-lg-3">
+            <div class="card">
+              <a href=https://www.amazon.in/s?k=applelaptop&ref=nb_sb_noss_2>
+                <img src="shopping images/laptop.jpg" class="card-img-top" height="193vh" alt="...">
+                <div class="card-body">
+                  <h4>Laptop</h4>
+                  New Apple MacBook Air(13-inch, 1.1GHz Dual-core 10th-Generation Intel Core i3 Processor, 8GB
+                  RAM, 256GB
+                  Storage)-Silver
+                  <p class="card-text">
+                    ₹ 83,990 <del>₹ 89,990<del>
+                  </p>
+              </a>
+              <span class="fa fa-star checked" style="font-size: 16px" ;></span>
+              <span class="fa fa-star checked" style="font-size: 16px" ;></span>
+              <span class="fa fa-star checked" style="font-size: 16px" ;></span>
+              <span class="fa fa-star" style="font-size: 16px" ;></span>
+              <span class="fa fa-star" style="font-size: 16px" ;></span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="card">
+            <a
+              href=https://www.amazon.in/New-Apple-Watch-GPS-Cellular-44mm/dp/B08J66YBGX/ref=asc_df_B08J66YBGX/?tag=googleshopdes-21&linkCode=df0&hvadid=480485769306&hvpos=&hvnetw=g&hvrand=17444545932115971121&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1007800&hvtargid=pla-1084250239576&psc=1&ext_vrnc=hi>
+
+              <img src="shopping images/watch.jpg" class="card-img-top" height="201vh" alt="...">
+              <div class="card-body" style="height: 35vh">
+                <h4>Apple Watch</h4>
+                <p> New Apple Watch SE (GPS, 44mm) Awesome Display - Space Grey Aluminium Case with Black Sport
+                  Band</p>
+                <p class="card-text">
+                  ₹ 73,990 <del>₹79,990<del>
+                </p>
+            </a>
+            <span class="fa fa-star checked" style="font-size: 16px" ;></span>
+            <span class="fa fa-star checked" style="font-size: 16px" ;></span>
+            <span class="fa fa-star checked" style="font-size: 16px" ;></span>
+            <span class="fa fa-star" style="font-size: 16px" ;></span>
+            <span class="fa fa-star" style="font-size: 16px" ;></span>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3">
+        <div class="card">
+          <a
+            href=https://www.amazon.in/New-Apple-iPhone-11-128GB/dp/B08L8BQ4H9/ref=sr_1_4?dchild=1&keywords=apple&qid=1609748428&sr=8-4>
+            <img src="shopping images/applephone.jpg" class="card-img-top" height="201vh" alt="...">
+            <div class="card-body" style="height: auto">
+              <h4>iphone</h4>
+              <p>Apple iPhone 11 (128GB)
+                12MP TrueDepth front camera with Portrait mode and
+                Face ID for secure authentication</p>
+              <p class="card-text">
+                ₹ 21,990 <del>₹ 26,990<del>
+              </p>
+          </a>
+          <span class="fa fa-star checked" style="font-size: 16px" ;></span>
+          <span class="fa fa-star checked" style="font-size: 16px" ;></span>
+          <span class="fa fa-star checked" style="font-size: 16px" ;></span>
+          <span class="fa fa-star" style="font-size: 16px" ;></span>
+          <span class="fa fa-star" style="font-size: 16px" ;></span>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3">
+      <div class="card">
+        <a
+          href="https://www.amazon.in/s?k=apple+tablets&crid=WQLVJ7C6L8KQ&sprefix=apple+tab%2Caps%2C1013&ref=nb_sb_ss_ts-doa-p_2_9">
+          <img src="shopping images/tablet.jpg" class="card-img-top" height="195vh" width="20vw" alt="...">
+          <div class="card-body" style="height: auto">
+            <h4>Apple Tablet</h4>
+            <p>Apple iPad Air (10.5-inch, Wi-Fi, 64GB) - Space Grey with Oled Display (3rd Generation) Space Grey
+              Awersome gadget</p>
+            <p class="card-text">
+              ₹ 42,990 <del>₹46,990<del>
+            </p>
+        </a>
+        <span class="fa fa-star checked" style="font-size: 16px" ;></span>
+        <span class="fa fa-star checked" style="font-size: 16px" ;></span>
+        <span class="fa fa-star checked" style="font-size: 16px" ;></span>
+        <span class="fa fa-star" style="font-size: 16px" ;></span>
+        <span class="fa fa-star" style="font-size: 16px" ;></span>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+
+
+
+  <!-- 50% -->
+  <div class="container-fluid">
+    <div class="row d-flex justify-content-between text-center" style="background-color: #1a1a4b;">
+      <div class="col">
+        <img src="shopping images/50.jpg" alt="">
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="row " style="background-color: #eee;">
+      <div class="col-sm-4">
+        <div class="card">
+          <div class="card-body">
+            <a
+              href="https://www.amazon.in/realme-Bluetooth-Soundbar-Channel-Subwoofer/dp/B08KF6DQS2/ref=asc_df_B08KF6DQS2/?tag=googleshopdes-21&linkCode=df0&hvadid=397009237411&hvpos=&hvnetw=g&hvrand=11695313919708498230&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9299325&hvtargid=pla-984664331417&psc=1&ext_vrnc=hi ">
+              <!-- <h5 class="card-title">Special title treatment</h5> -->
+              <img src="shopping images/realmesoundbar.jpg" height="400vh" width="100%" alt="...">
+              <p class="card-text">realme 100 W Bluetooth Soundbar (Black,2.1 Channel) with Wired Subwoofer </p>
+            </a>
+            <div class="d-inline-block">
+              <div class="d-inline-block">₹6,499
+                <div class="d-inline-block" style="padding: 6px" id="color"><del>₹8,999</del>
+                  <div class="d-inline-block" style="padding-left: 140px;">
+                    <span class="fa fa-star checked" style="font-size: 16px" ;></span>
+                    <span class="fa fa-star checked" style="font-size: 16px" ;></span>
+                    <span class="fa fa-star checked" style="font-size: 16px" ;></span>
+                    <span class="fa fa-star" style="font-size: 16px" ;></span>
+                    <span class="fa fa-star" style="font-size: 16px" ;></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-4">
+        <div class="card">
+          <div class="card-body">
+            <a
+              href="https://www.amazon.in/Lifelong-Burner-warranty-Doorstep-Service/dp/B077XB2ZZM/ref=sr_1_9?dchild=1&keywords=gas&qid=1609495255&sr=8-9 ">
+              <!-- <h5 class="card-title">Special title treatment</h5> -->
+              <img src="shopping images/gas.jpg" height="376vh" width="100%" alt="...">
+              <p class="card-text">Lifelong Glass Top Gas Stove, 4 Burner Gas Stove, Black (ISI Certified,1 year
+                warranty
+                with Doorstep Service)</p>
+            </a>
+            <div class="d-inline-block">
+              <div class="d-inline-block">₹2,999
+                <div class="d-inline-block" style="padding: 6px" id="color"><del>₹7,499</del>
+                  <div class="d-inline-block" style="padding-left: 140px;">
+                    <span class="fa fa-star checked" style="font-size: 16px" ;></span>
+                    <span class="fa fa-star checked" style="font-size: 16px" ;></span>
+                    <span class="fa fa-star checked" style="font-size: 16px" ;></span>
+                    <span class="fa fa-star" style="font-size: 16px" ;></span>
+                    <span class="fa fa-star" style="font-size: 16px" ;></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-4">
+        <div class="card">
+          <div class="card-body">
+            <a
+              href="https://www.amazon.in/Echo-Dot-3rd-Gen/dp/B07PFFMP9P/ref=sr_1_1?dchild=1&keywords=amazon+alexa&qid=1609495408&sr=8-1">
+              <!-- <h5 class="card-title">Special title treatment</h5> -->
+              <img src="shopping images/alexa.jpg" height="400vh" width="100%" alt="...">
+              <p class="card-text">Echo Dot (3rd Gen) – Smart speaker with Alexa (Black)</p>
+            </a>
+            <div class="d-inline-block">
+              <div class="d-inline-block">₹3,490
+                <div class="d-inline-block" style="padding: 6px" id="color"><del>₹4,490</del>
+                  <div class="d-inline-block" style="padding-left: 140px;">
+                    <span class="fa fa-star checked" style="font-size: 16px" ;></span>
+                    <span class="fa fa-star checked" style="font-size: 16px" ;></span>
+                    <span class="fa fa-star checked" style="font-size: 16px" ;></span>
+                    <span class="fa fa-star" style="font-size: 16px" ;></span>
+                    <span class="fa fa-star" style="font-size: 16px" ;></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-4">
+        <div class="card m-3">
+          <div class="card-body">
+            <a
+              href="https://www.amazon.in/AmazonBasics-Tool-Bag-Backpack-Pocket/dp/B079YQPPW2/ref=sr_1_1_sspa?dchild=1&keywords=bag&qid=1609495590&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUFIRTZZN05DUUZKNFMmZW5jcnlwdGVkSWQ9QTAwOTcwMzEzMENKRU9RUEdIUktMJmVuY3J5cHRlZEFkSWQ9QTAyNzI4MzY0UDlXVVE2RTBTWEUmd2lkZ2V0TmFtZT1zcF9hdGYmYWN0aW9uPWNsaWNrUmVkaXJlY3QmZG9Ob3RMb2dDbGljaz10cnVl ">
+              <!-- <h5 class="card-title">AmazonBasics Backpack</h5> -->
+              <img src="shopping images/realmebag.jpg" height="400vh" width="100%" alt="...">
+              <p class="card-text">AmazonBasics Tool Bag Backpack, 50 Pocket - 2 Pocket Front</p>
+              <!-- <a href="#" class="btn btn-outline-primary">Go somewhere</a> -->
+            </a>
+            <div class="d-inline-block">
+              <div class="d-inline-block">₹3,299
+                <div class="d-inline-block" style="padding: 6px" id="color"><del>₹6,200</del>
+                  <div class="d-inline-block" style="padding-left: 100px;">
+                    <span class="fa fa-star checked" style="font-size: 16px" ;></span>
+                    <span class="fa fa-star checked" style="font-size: 16px" ;></span>
+                    <span class="fa fa-star checked" style="font-size: 16px" ;></span>
+                    <span class="fa fa-star" style="font-size: 16px" ;></span>
+                    <span class="fa fa-star" style="font-size: 16px" ;></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-4">
+        <div class="card m-3">
+          <div class="card-body">
+            <a
+              href=" https://www.amazon.in/NIBOSI-Watches-Fashion-Waterproof-Leather/dp/B07R473W11/ref=sr_1_23_sspa?dchild=1&keywords=watch&qid=1609495997&sr=8-23-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEyNEhKWUJaUEtZWlIwJmVuY3J5cHRlZElkPUEwNzYzOTMxMVg4SkxKOFVXRUxRSCZlbmNyeXB0ZWRBZElkPUEwNzc5ODE5RVhITzU1V01SMjA2JndpZGdldE5hbWU9c3BfbXRmJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ==">
+              <!-- <h5 class="card-title">Special title treatment</h5> -->
+              <img src="shopping images/miwatch.jpg" height="420vh" width="100%" alt="...">
+              <p class="card-text">NIBOSI Analogue Black Dial Men's Watch</p>
+              <!-- <a href="#" class="btn btn-outline-primary">Go somewhere</a> -->
+            </a>
+            <div class="d-inline-block style=width:auto,padding:30px">
+              <div class="d-inline-block">₹1,499
+                <div class="d-inline-block" style="padding: 6px" id="color"><del>₹2,990</del>
+                  <div class="d-inline-block" style="padding-left: 100px;">
+                    <span class="fa fa-star checked" style="font-size: 16px" ;></span>
+                    <span class="fa fa-star checked" style="font-size: 16px" ;></span>
+                    <span class="fa fa-star checked" style="font-size: 16px" ;></span>
+                    <span class="fa fa-star" style="font-size: 16px" ;></span>
+                    <span class="fa fa-star" style="font-size: 16px" ;></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-4">
+        <div class="card m-3">
+          <div class="card-body">
+            <a
+              href="https://www.amazon.in/pTron-Bassbuds-Wireless-Bluetooth-Headphones/dp/B07WSHWNH8/ref=sr_1_3?crid=3MINL1ZLSDW9X&dchild=1&keywords=ptron&qid=1609495838&sprefix=ptr%2Caps%2C374&sr=8-3 ">
+              <!-- <h5 class="card-title">Special title treatment</h5> -->
+              <img src="shopping images/ptron.jpg" height="320vh" width="100%" alt="...">
+              <p class="card-text">pTron Bassbuds in-Ear True Wireless Bluetooth 5.0 Headphones with Hi-Fi Deep Bass,
+                20Hrs
+                Playtime with Case, Ergonomic Sweatproof Earbuds, Noise Isolation, Voice Assistance & Built-in Mic -
+                (Black)
+              </p>
+              <!-- <a href="#" class="btn btn-outline-primary">Go somewhere</a> -->
+            </a>
+            <div class="d-inline-block style=width:auto,padding:30px">
+              <div class="d-inline-block">₹899
+                <div class="d-inline-block" style="padding: 6px" id="color"><del>₹1,900.00</del>
+                  <div class="d-inline-block" style="padding-left: 100px;">
+                    <span class="fa fa-star checked" style="font-size: 16px" ;></span>
+                    <span class="fa fa-star checked" style="font-size: 16px" ;></span>
+                    <span class="fa fa-star checked" style="font-size: 16px" ;></span>
+                    <span class="fa fa-star" style="font-size: 16px" ;></span>
+                    <span class="fa fa-star" style="font-size: 16px" ;></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      </div>
+  
+   
+    
+
+      <!-- singel-image -->
+      <div class="container-fluid mt-4">
+        <div class="row">
+          <img src="shopping images/beautyandgrooming.jpg" alt="">
+        </div>
+      </div>
+
+      <div class="container mt-1">
+        <div class="row">
+          <div class="col mt-4 text-center">
+            <p>
+              <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button"
+                aria-expanded="false" aria-controls="collapseExample">
+                Services
+              </a>
+            </p>
+            <div class="collapse" id="collapseExample">
+              <div class=" row card card-body" id="card-body">
+                <div class="col-sm-3">
+                  <i class="fa fa-truck"></i>
+                  <h4>Free delivery</h4>
+                  <p>for shipping on all order</p>
+                  <hr>
+                </div>
+                <div class="col-sm-3">
+                  <i class="fa fa-calendar"></i>
+                  <h4>24/7 Support</h4>
+                  <p>for shipping on all order</p>
+                  <hr>
+                </div>
+                <div class="col-sm-3">
+                  <i class="fa fa-key"></i>
+                  <h4>Secure Payment</h4>
+                  <p>for shipping on all order</p>
+                  <hr>
+                </div>
+                <div class="col-sm-3">
+                  <i class="fa fa-exchange"></i>
+                  <h4>Return policy</h4>
+                  <p>for shipping on all order</p>
+                  <hr>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- back to home  -->
+      <div class="container-fluid d-flex justify-content-center" id="backtohome">
+        <a href="#">Back to Top</a>
+      </div>
+
+      <!-- footer -->
+       <div class="container-fluid" style="background-color: #232F3E" ; id="footer">
+        <div _ngcontent-c6="" class="footer-container ng-star-inserted">
+          <div _ngcontent-c6="" class="container-fluid no-gutter">
+            <div _ngcontent-c6=""
+              class=" col-xl-10  offset-xl-1 col-lg-12 offset-lg-0 col-md-12  col-sm-12 col-xs-12 col-12">
+              <div _ngcontent-c6="" class="row no-gutter">
+                <div _ngcontent-c6="" class="col-lg-3  col-md-3  col-sm-6 col-xs-6 col-6 offset-lg-0 md-offset-0  offset-sm-0 offset-xs-1
+        footer-col">
+                  <div _ngcontent-c6="" class="footer-heading"> ABOUT STARQUIK </div>
+                  <div _ngcontent-c6="" class="footer-text"><a _ngcontent-c6="" href="About-us">About Us</a></div>
+                  <div _ngcontent-c6="" class="footer-text"><a _ngcontent-c6="" href="/terms-of-use">Terms of Use</a>
+                  </div>
+                  <div _ngcontent-c6="" class="footer-text"><a _ngcontent-c6="" href="/privacy-policy">Privacy
+                      Policy</a>
+                  </div>
+                  <div _ngcontent-c6="" class="footer-text"><a _ngcontent-c6="" href="/faq">FAQ</a></div>
+                  <div _ngcontent-c6="" class="footer-text"><a _ngcontent-c6="" href="/terms-and-conditions">T&amp;C</a>
+                  </div>
+                  <div _ngcontent-c6="" class="footer-text"><a _ngcontent-c6="" href="/terms-of-offer"> Terms Of Offer
+                    </a>
+                  </div>
+                  <div _ngcontent-c6="" class="footer-text"><a _ngcontent-c6="" href="/investors"> Investors </a></div>
+                </div>
+                <div _ngcontent-c6="" class=" col-lg-3 col-md-3 col-sm-6 col-xs-6 col-6 offset-lg-0 md-offset-0  offset-sm-0 offset-xs-1
+        footer-col">
+                  <div _ngcontent-c6="" class="footer-heading"> PAYMENT AND SHIPPING </div>
+                  <div _ngcontent-c6="" class="footer-text"><a _ngcontent-c6="" href="/payment-and-shipping">Payment
+                      Methods</a></div><a _ngcontent-c6="" class="footer-text"><a _ngcontent-c6=""
+                      href="/payment-and-shipping">Shipping Policy</a></a>
+                  <div _ngcontent-c6="" class="footer-text"><a _ngcontent-c6="" href="/payment-and-shipping"> Locations
+                      We
+                      Ship to </a></div>
+                  <div _ngcontent-c6="" class="footer-text"><a _ngcontent-c6="" href="/payment-and-shipping">Estimated
+                      Delivery Time</a></div>
+                  <div _ngcontent-c6="" class="footer-text"><a _ngcontent-c6="">Book Store Visit</a></div>
+                </div>
+                <div _ngcontent-c6="" class="col-lg-3  col-md-3 col-sm-6 col-xs-6 col-6 offset-lg-0 md-offset-0  offset-sm-0 offset-xs-1
+        footer-col">
+                  <div _ngcontent-c6="" class="footer-heading"> CONTACT US </div>
+                  <div _ngcontent-c6="" class="footer-text"> manurajput844.com </div>
+                  <div _ngcontent-c6="" class="footer-text"> 7986621856</div>
+                </div>
+                <div _ngcontent-c6="" class=" col-lg-3  col-md-3 col-sm-6 col-xs-6 col-6 offset-lg-0 md-offset-0  offset-sm-0 offset-xs-1
+        footer-col">
+                  <div _ngcontent-c6="" class="footer-heading"> FOLLOW US </div>
+                  <div _ngcontent-c6="" class="social-icons-div">
+                    <div _ngcontent-c6="" class="icon facebook"><a _ngcontent-c6=""
+                        href="https://www.facebook.com/TataStarQuik" rel="noopener" target="_blank"><img
+                          _ngcontent-c6="" alt="" src="/assets/img/facebook.png"></a></div>
+                    <div _ngcontent-c6="" class="icon twitter"><a _ngcontent-c6="" href="https://twitter.com/StarQuik"
+                        rel="noopener" target="_blank"><img _ngcontent-c6="" alt="" src="/assets/img/twitter.png"></a>
+                    </div>
+                    <div _ngcontent-c6="" class="icon googleplus"><a _ngcontent-c6=""
+                        href="https://plus.google.com/100506795307891487556" rel="noopener" target="_blank"><img
+                          _ngcontent-c6="" alt="" src="/assets/img/googleplus.png"></a></div>
+                  </div>
+                  <div _ngcontent-c6="" class="footer-heading"> NEWSLETTER </div>
+                  <div _ngcontent-c6="" class="footer-text"> Enter your email address, be first to get exclusive offers,
+                    updates, tips and more. </div>
+                  <div _ngcontent-c6="" class="email-text-div"><input _ngcontent-c6=""
+                      class="email-input ng-untouched ng-pristine ng-invalid" id="newsLetter"
+                      pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" placeholder="What’s your email ID?" required=""
+                      type="email">
+                    <!----><button _ngcontent-c6="" class="btn-footer-email ng-star-inserted"><i _ngcontent-c6=""
+                        class="fa fa-check"></i></button>
+                    <!---->
+                    <div _ngcontent-c6="" class="md-errors-spacer" hidden=""></div>
+                    <div _ngcontent-c6="" class="msg-container">
+                      <!---->
+                      <!---->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+ 
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+          integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU"
+          crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+          integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
+          crossorigin="anonymous"></script>
+</body>
+
+</html>
